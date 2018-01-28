@@ -1,7 +1,12 @@
 package course.api.data.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity //maps the class to become a RM database entity (JPA -> ORM)
 public class Topic {
 
+	@Id // PK
 	private String id;
 	private String name;
 	private String description;
